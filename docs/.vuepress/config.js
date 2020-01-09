@@ -16,6 +16,10 @@ module.exports = {
       {
         text: "前端之路",
         link: "/frontEnd/"
+      },
+      {
+        text: "诗和远方",
+        link: "/life/"
       }
     ],
     sidebar: {
@@ -37,8 +41,18 @@ module.exports = {
             // "/frontEnd/vue/four.html" // 你的md文件地址
           ]
         }
+      ],
+      "/life/": [
+        {
+          title: "早课", // 侧边栏名称
+          // collapsable: true, // 可折叠
+          children: [
+            // "/life/", // 你的md文件地址
+            "/life/day1.html" // 你的md文件地址
+            // "/frontEnd/js/two.html"
+          ]
+        }
       ]
-
       // "/vue/": ["", "three", "four"]
     }, // 侧边栏配置
     sidebarDepth: 2, // 侧边栏显示2级
@@ -47,7 +61,7 @@ module.exports = {
     // activeHeaderLinks: false, // 设置导航是否随标题改变，默认值：true
     lastUpdated: "Last Updated", // string | boolean
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-    repo: "vuejs/vuepress",
+    repo: "hehuiting/vuepressBlog",
     // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
     // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
     repoLabel: "GitHub",
@@ -55,9 +69,9 @@ module.exports = {
     // 以下为可选的编辑链接选项
 
     // 假如你的文档仓库和项目本身不在一个仓库：
-    docsRepo: "hehuiting",
+    docsRepo: "hehuiting/vuepressBlog",
     // 假如文档不是放在仓库的根目录下：
-    docsDir: "vuepressBlog",
+    docsDir: "docs",
     // 假如文档放在一个特定的分支下：
     docsBranch: "master",
     // 默认是 false, 设置为 true 来启用
@@ -66,7 +80,6 @@ module.exports = {
     editLinkText: "在GitHub上编辑此页",
 
     smoothScroll: true,
-    prev: true,
-    next: true
+    serviceWorker: true
   }
 };

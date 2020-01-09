@@ -1,6 +1,7 @@
 ---
 home: true
-heroImage: /logo.jpg
+# layout: HomeLayout
+heroImage: false
 heroText: HeHuiting's Blog
 # tagline: Hero 副标题
 actionText: Get Started →
