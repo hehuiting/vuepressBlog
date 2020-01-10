@@ -25,37 +25,23 @@ module.exports = {
     sidebar: {
       "/frontEnd/": [
         {
-          title: "JS基础", // 侧边栏名称
+          title: "JS基础",
           // collapsable: true, // 可折叠
-          children: [
-            "/frontEnd/js/", // 你的md文件地址
-            "/frontEnd/js/one.html" // 你的md文件地址
-            // "/frontEnd/js/two.html"
-          ]
+          children: ["/frontEnd/js/", "/frontEnd/js/one.html"]
         },
         {
           title: "Vue", // 侧边栏名称
-          // collapsable: true, // 可折叠
-          children: [
-            "/frontEnd/vue/" // 你的md文件地址
-            // "/frontEnd/vue/four.html" // 你的md文件地址
-          ]
+          children: ["/frontEnd/vue/"]
         }
       ],
       "/life/": [
         {
-          title: "早课", // 侧边栏名称
-          // collapsable: true, // 可折叠
-          children: [
-            // "/life/", // 你的md文件地址
-            "/life/day1.html" // 你的md文件地址
-            // "/frontEnd/js/two.html"
-          ]
+          title: "早课",
+          children: ["/life/day1.html"]
         }
       ]
-      // "/vue/": ["", "three", "four"]
     }, // 侧边栏配置
-    sidebarDepth: 2, // 侧边栏显示2级
+    sidebarDepth: 1, // 侧边栏显示2级
     navbar: true,
     displayAllHeaders: true, // 默认值：false
     // activeHeaderLinks: false, // 设置导航是否随标题改变，默认值：true
