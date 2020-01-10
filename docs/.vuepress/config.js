@@ -18,7 +18,7 @@ module.exports = {
         link: "/frontEnd/"
       },
       {
-        text: "诗和远方",
+        text: "精进",
         link: "/life/"
       }
     ],
