@@ -7,14 +7,14 @@ module.exports = {
   ],
   base: "/", // 这是部署到github相关的配置
   markdown: {
-    lineNumbers: false // 代码块显示行号
+    lineNumbers: true // 代码块显示行号
   },
   themeConfig: {
     nav: [
       // 导航栏配置
       { text: "主页", link: "/" },
       {
-        text: "前端之路",
+        text: "前端",
         link: "/frontEnd/"
       },
       {
@@ -26,7 +26,7 @@ module.exports = {
       "/frontEnd/": [
         {
           title: "JS基础",
-          // collapsable: true, // 可折叠
+          collapsable: true, // 可折叠
           children: ["/frontEnd/js/", "/frontEnd/js/one.html"]
         },
         {
@@ -41,7 +41,7 @@ module.exports = {
         }
       ]
     }, // 侧边栏配置
-    sidebarDepth: 1, // 侧边栏显示2级
+    sidebarDepth: 2, // 侧边栏显示2级
     navbar: true,
     displayAllHeaders: true, // 默认值：false
     // activeHeaderLinks: false, // 设置导航是否随标题改变，默认值：true
