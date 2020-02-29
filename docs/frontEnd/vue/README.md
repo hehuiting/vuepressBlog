@@ -7,12 +7,12 @@
 
 在vue-cli3中可以在根目录（与package.json同级）中创建以下四种类型的环境变量文件：
 
-```
+
 .env                # 在所有的环境中被载入
 .env.local          # 在所有的环境中被载入，但会被 git 忽略
 .env.[mode]         # 只在指定的模式中被载入
 .env.[mode].local   # 只在指定的模式中被载入，但会被 git 忽略
-```
+
 值得注意的是，为一个特定模式准备的环境文件的（如：.env.production）将比一般的环境文件（如：.env）拥有更高的优先级。
 
 **2）环境变量配置**
@@ -44,11 +44,11 @@ VUE_APP_PERMISSION = true
 
 在vue-cli中默认情况下有以下三种模式：
 
-```
+
 development 模式：  用于 vue-cli-service serve
 production 模式：   用于 vue-cli-service build 和 vue-cli-service test:e2e
 test 模式：         用于 vue-cli-service test:unit
-```
+
 模式与环境变量不同，一个模式可包含多个环境变量（NODE_ENV），每个模式都会将NODE_ENV的值设为模式的名称。
 
 **2）模式定义与使用**
